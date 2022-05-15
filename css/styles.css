@@ -15,7 +15,7 @@
   font-family: "Roboto", sans-serif;
 }
 body {
-  font-size: 12px;
+  font-size: 14px;
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -94,12 +94,12 @@ header::before {
 }
 .presentacion-container > h5 {
   text-align: justify;
-  font-size: 1.5em;
+  font-size: 1.1em;
   color: #333;
   font-weight: 400;
 }
 .presentacion-container > h5 > span {
-  font-size: 2.3em;
+  font-size: 3em;
   font-weight: 600;
   color: var(--color-aux);
   text-shadow: 4px 5px 4px rgba(0, 0, 0, 0.87);
@@ -185,6 +185,7 @@ header::before {
   }
 }
 .btn-contact {
+  grid-area: c;
   font-size: 1.5rem;
   padding: 0.3em;
   color: var(--color-secondary);
@@ -218,6 +219,7 @@ header::before {
   cursor: pointer;
 }
 /* cierra home */
+
 /* ABRE MAIN */
 .t-habilidades {
   background-color: var(--color-primary);
@@ -229,10 +231,12 @@ header::before {
 }
 main section {
   height: 600px;
-  background-color: var(--color-primary);
+
+  background-color: var(--color-dark);
   display: flex;
   padding: 3px;
   border-bottom: 2vw solid var(--color-light);
+  justify-content:center
 }
 main section > aside,
 main section > aside > a {
@@ -243,6 +247,8 @@ main section > aside > a {
 }
 main section > aside {
   width: 50%;
+  background: var(--color-primary);
+  transform: skew(-5deg);
 }
 main section > aside > a {
   flex-direction: column;

@@ -10,20 +10,25 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,900&display=swap"
       rel="stylesheet"
     />
-    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles copy.css" />
     <title>Heyscar Romero</title>
   </head>
   <body>
     <!--abre header presentacion -->
+    <input type="checkbox" id="check-menu" />
+    <label for="check-menu" class="btn-menu"><i class="bx bx-menu"></i></label>
+    <div class="container container-menu">
+      <nav class="menu-navigation">
+        <a class="menu-navigation-link" href="#home">Principal</a>
+        <a class="menu-navigation-link" href="#languages">Mis Habilidades</a>
+        <a class="menu-navigation-link" href="#contact">Contactamé</a>
+      </nav>
+    </div>
     <header id="home">
-      <div class="container container-menu">
-        <nav class="menu-navigation">
-          <a class="menu-navigation-link" href="#home">Principal</a>
-          <a class="menu-navigation-link" href="#languages">Mis Habilidades</a>
-          <a class="menu-navigation-link" href="#contact">Contactamé</a>
-        </nav>
-      </div>
       <div class="container container-home">
         <div class="presentacion-container">
           <h5>
@@ -34,47 +39,39 @@
             trabajo en equipo y en busca de nuevas experiencias en el mundo IT.
           </h5>
         </div>
-        <div class="fresh-principal">
+        <div class="fresh">
           <h2 class="carrer-tilte">DESARROLLADOR</h2>
           <div class="botons-lenguages-principal">
-            <a href="#java"
-              ><div class="botons-lenguages"><span>JAVA</span></div></a
-            >
-            <a href=""
-              ><div class="botons-lenguages"><span>PHP</span></div></a
-            >
-            <a href=""
-              ><div class="botons-lenguages"><span>SQL</span></div></a
-            >
-            <a href=""><div class="botons-lenguages">HTML</div></a>
-            <a href=""><div class="botons-lenguages">CSS</div></a>
-            <a href=""><div class="botons-lenguages">JS</div></a>
-            <a href=""><div class="botons-lenguages">C#</div></a>
-            <a href="#c++"><div class="botons-lenguages">C++</div></a>
+            <a href="#c++"><div class="botons-lenguages"><i class="bx bxl-c-plus-plus"></i></div></a >
+            <a href="#java"><div class="botons-lenguages"><i class="bx bxl-java"></i></div></a>            
+            <a href=""><div class="botons-lenguages"><i class="bx bxl-javascript"></i></div></a>
+            <a href=""><div class="botons-lenguages"><i class="bx bxl-postgresql"></i></div></a>
+            <a href=""><div class="botons-lenguages"><i class="bx bxl-html5"></i></div></a>
+            <a href=""><div class="botons-lenguages"><i class="bx bxl-css3"></i></div></a>
+
           </div>
-          <button href="" class="btn-contact">CONTACTAME</button>
+        </div>
+        <div class="container container-button">
+          <button class="btn-contact">CONTACTAME</button>
         </div>
       </div>
     </header>
     <!--cierra header presentacion -->
 
-  
-    <main >
-      <h1 id="languages" class="t-habilidades">Mis Habilidades</h1>
+    <main>
+      <h1 id="languages" class="t-habilidades">Mis Proyectos</h1>
       <section id="c++">
         <aside>
           <a href="https://es.wikipedia.org/wiki/C%2B%2B">
-            <span class="">C++</span>
             <i class="bx bxl-c-plus-plus"></i>
           </a>
         </aside>
         <article class="art-proyecto">
           <img src="resources/images/domino-1.png" alt="WarShip-p" />
-          <h5>
-            Domino
-          </h5>    
+          <div class="title-container">
+            <h5>Domino</h5>
           <div class="container-pills">
-              <a
+            <a
               class="pill"
               href="https://desarrolloweb.com/articulos/1354.php"
               target="_blank"
@@ -84,15 +81,19 @@
               target="_blank"
               href="https://desarrolloweb.com/articulos/1354.php"
               class="pill"
-              >Console</a>
-            </div>
+              >Console</a
+            >
+          </div>
+          </div>
           <p>
-            Un Sencillo Programa donde su principal funcion es evaluar una partida de domino desarrollado para especificaciones de
-            materia programacion 1 en mi universidad
+            Un Sencillo Programa donde su principal funcion es evaluar una
+            partida de domino desarrollado para especificaciones de materia
+            programacion 1 en mi universidad
           </p>
         </article>
         <article class="art-proyecto">
           <img src="resources/images/warship-1.png" alt="WarShip-p" />
+          <div class="title-container">
           <h5>Warship</h5>
           <div class="container-pills">
             <a
@@ -105,7 +106,9 @@
               target="_blank"
               href="https://desarrolloweb.com/articulos/1354.php"
               class="pill"
-              >Console</a>
+              >Console</a
+            >
+          </div>
           </div>
           <p>
             Mi primer Programa Desarrollado en c++ donde la logica es parecida a
@@ -120,39 +123,36 @@
         <aside>
           <a
             href="https://es.wikipedia.org/wiki/Java_(lenguaje_de_programaci%C3%B3n)"
-            ><span >JAVA</span>
-            <i class="bx bxl-java"></i></a
           >
+            <i class="bx bxl-java"></i
+          ></a>
         </aside>
         <article class="art-proyecto">
           <img src="resources/images/torre-1.png" alt="torre-hanoi" />
-          <h5>Torres de Hanoi</h5>
-          <div class="container-pills">
-            <a
-              class="pill"
-              href="https://es.wikipedia.org/wiki/Java_(lenguaje_de_programaci%C3%B3n)"
-              target="_blank"
-              >JAVA
-            </a>
-            <a
-              target="_blank"
-              href="https://es.wikipedia.org/wiki/Aplicaci%C3%B3n_de_escritorio"
-              class="pill"
-              >Escritorio</a
-            >
-            <a
-              class="pill"
-              href="https://openjfx.io/"
-              target="_blank"
-              >JAVAFX
-            </a>
-            <a
-            class="pill"
-            href="https://www.mysql.com/"
-            target="_blank"
-            >MySQL
-          </a>
+          <div class="title-container">
+            <h5>Torres de Hanoi</h5>
+            <div class="container-pills">
+              <a
+                class="pill"
+                href="https://es.wikipedia.org/wiki/Java_(lenguaje_de_programaci%C3%B3n)"
+                target="_blank"
+                >JAVA
+              </a>
+              <a
+                target="_blank"
+                href="https://es.wikipedia.org/wiki/Aplicaci%C3%B3n_de_escritorio"
+                class="pill"
+                >Escritorio</a
+              >
+              <a class="pill" href="https://openjfx.io/" target="_blank"
+                >JAVAFX
+              </a>
+              <a class="pill" href="https://www.mysql.com/" target="_blank"
+                >MySQL
+              </a>
+            </div>
           </div>
+
           <p>
             Un Sencillo Programa de Poker desarrollado para especificaciones de
             materia programacion 1 en mi universidad
@@ -160,6 +160,7 @@
         </article>
         <article class="art-proyecto">
           <img src="resources/images/torre-1.png" alt="torre-hanoi" />
+          <div class="title-container">
           <h5>Corona Suits</h5>
           <div class="container-pills">
             <a
@@ -174,18 +175,13 @@
               class="pill"
               >Escritorio</a
             >
-            <a
-              class="pill"
-              href="https://openjfx.io/"
-              target="_blank"
+            <a class="pill" href="https://openjfx.io/" target="_blank"
               >JAVAFX
             </a>
-            <a
-            class="pill"
-            href="https://www.mysql.com/"
-            target="_blank"
-            >MySQL
-          </a>
+            <a class="pill" href="https://www.mysql.com/" target="_blank"
+              >MySQL
+            </a>
+          </div>
           </div>
           <p>
             Un Sencillo Programa de Poker desarrollado para especificaciones de
@@ -207,27 +203,35 @@
         </div>
       </div>
     </main>
+    <h1 id="languages" class="t-habilidades">Contacto</h1>
     <footer id="contact">
-      <div class="fresh-principal">
-        <h2 class="carrer-tilte">HeyscarRomero</h2>
+  
+     
+      <div class="container-buttons-contact">
+        <a href=""><i class="bx bxl-linkedin"></i></a>
+        <a href=""><i class="bx bxl-whatsapp"></i></a>
+        <a href=""><i class="bx bxl-telegram"></i></a>
+        <a href=""><i class="bx bxl-gmail"></i></a>
+      </div>
+      <div class="fresh">
+        <h2 class="carrer-tilte">DESARROLLADOR</h2>
         <div class="botons-lenguages-principal">
-          <a href=""
-            ><div class="botons-lenguages"><span>JAVA</span></div></a
-          >
-          <a href=""
-            ><div class="botons-lenguages"><span>PHP</span></div></a
-          >
-          <a href=""
-            ><div class="botons-lenguages"><span>SQL</span></div></a
-          >
-          <a href=""><div class="botons-lenguages">HTML</div></a>
-          <a href=""><div class="botons-lenguages">CSS</div></a>
-          <a href=""><div class="botons-lenguages">JS</div></a>
-          <a href=""><div class="botons-lenguages">C#</div></a>
-          <a href=""><div class="botons-lenguages">C++</div></a>
+          <a href="#c++"><div class="botons-lenguages"><i class="bx bxl-c-plus-plus"></i></div></a >
+          <a href="#java"><div class="botons-lenguages"><i class="bx bxl-java"></i></div></a>            
+          <a href=""><div class="botons-lenguages"><i class="bx bxl-javascript"></i></div></a>
+          <a href=""><div class="botons-lenguages"><i class="bx bxl-postgresql"></i></div></a>
+          <a href=""><div class="botons-lenguages"><i class="bx bxl-html5"></i></div></a>
+          <a href=""><div class="botons-lenguages"><i class="bx bxl-css3"></i></div></a>
+
         </div>
       </div>
+      <form id="form-contact" action="">
+        <input type="text" name="firstName" >
+        <input type="text" name="lastName">
+        <input type="email" name="email">
+        <input type="submit">
+      </form>
     </footer>
-
+    <script src="js/menu.js"></script>
   </body>
 </html>
