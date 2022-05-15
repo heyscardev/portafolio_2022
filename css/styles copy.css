@@ -6,6 +6,7 @@
   --color-light: #cfe6e2;
   --color-darklight: #525252;
   --color-background: #010101;
+  --color-air: #ffff;
   scroll-behavior: smooth;
 }
 * {
@@ -452,15 +453,17 @@ main section > aside > a {
 footer {
  display: flex;
  flex-direction: column;
+
+ justify-content: center;
+ background-color: var(--color-light);
 }
-footer > .fresh-principal {
-  grid-area: y;
+footer > .fresh {
+ background-color: var(--color-light);
   align-items: center;
   justify-content: center;
   height: fit-content;
 }
 footer >.container-buttons-contact{
-  grid-area: z;
   display:  flex;
   justify-content: space-evenly;
 }
@@ -477,6 +480,47 @@ footer >.container-buttons-contact{
   border: 2px solid var(--color-aux);
   margin: 20px auto;
 }
+#form-contact{
+ width: 100%;
+background: linear-gradient(var(--color-air) 80% , var(--color-light) 100% );
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ padding: 30px 0px;
+
+}
+#form-contact label{
+  font-size: 1.5em;
+  width: 80%;
+  margin-left: 20px;
+  color: #4a6966;
+  text-shadow: -2px 2px 5px var(--color-dark);
+}
+#form-contact > input{
+  font-size: 1.5em;
+  width: 80%;
+  height: 1.7em;
+  border-radius: 20px;
+  background-color: var(--color-light);
+  border: none;
+  color: var(--color-aux);
+  margin-bottom: 10px;
+  text-align: center;
+  box-shadow: -2px 10px 10px solid var(--color-dark) ;
+
+}
+#form-contact > button{
+  width: 60%;
+  height: auto;
+  font-size: 1.5em;
+  background-color: var(--color-primary);
+  color: var(--color-light);
+  border-radius: 20px;
+  padding: 10px 5px;
+  border: 2px solid var(--color-aux);
+  box-shadow: 0px 3px 5px var(--color-dark);
+  margin-top: 20px;
+  }
 
 /* cierra footer */
 /* abre modal */
@@ -521,7 +565,7 @@ footer >.container-buttons-contact{
   height: 100%;
 }
 #carrer_modal button {
-  margin: 10px;
+  margin: 20px;
   border-radius: 100%;
   background-color: var(--color-aux);
   border: var(--color-primary) 1px solid;
